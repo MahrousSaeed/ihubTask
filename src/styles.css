@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~ngx-toastr/toastr';
+body{
+    background-color: #EEE;
+    font-family: 'Candara';
+}
+.form-signin {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #7E49FF, #00FFD0);
+    
+}
+.form-signin .wrapper {
+    width: 100%;
+    max-width: 330px;
+    padding: 60px 20px;
+}
+.wrapper {
+    background: #FFF; 
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 28px -15px #797979;
+    border: none;
+}
+.submit{
+    border-radius: 26px;
+}
+.profile_img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.navbar {
+    background: linear-gradient(45deg, #7E49FF, #00FFD0) !important;
+}
+.btn-primary {
+    background-color:#1e67b7 !important
+}

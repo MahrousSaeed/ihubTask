@@ -1,0 +1,26 @@
+<div class="form-signin text-center">
+	<form class="wrapper" #form="ngForm" role="form" autocomplete="off" (ngSubmit)="submitForm()">
+		<img class="mb-4" src="assets/images/logo.png" alt="" width="72" height="auto">
+		<h1 class="h3 mb-4 font-weight-normal">Please Register</h1>
+
+		<label for="inputPassword" class="sr-only">Name</label>
+		<input type="text" [(ngModel)]="registerModel.name" name="name" #name="ngModel" id="name"
+			class="form-control rounded-pill mb-4" placeholder="Full name" required>
+
+		<label for="inputEmail" class="sr-only">Email address</label>
+		<input type="email" [(ngModel)]="registerModel.email" id="email" name="email"
+		 	 class="form-control rounded-pill mb-4" placeholder="Email address" required>
+		
+		<label for="inputPassword" class="sr-only">Phone Number</label>
+		<input type="number" [(ngModel)]="registerModel.phone" name="phone" #phone="ngModel" id="phone"
+			class="form-control rounded-pill mb-4" placeholder="Phone Number">
+
+		<label for="inputPassword" class="sr-only">Password</label>
+		<input type="password" [(ngModel)]="registerModel.password" name="password" #password="ngModel" id="password"
+			class="form-control rounded-pill mb-4" placeholder="password" required>
+		
+		<button class="btn mt-4 btn-lg btn-primary submit btn-block m-0" type="submit" [disabled]="form.invalid" >Register</button>
+		<span class="mt-5">Do you have an account ? <a routerLink="/login">Login Now</a></span>
+	</form>
+</div>
+

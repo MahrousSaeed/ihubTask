@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "phone": "1-770-736-8031 x56442"
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "email": "Shanna@melissa.tv",
+      "phone": "010-692-6593 x09125"
+    },
+    {
+      "name": "admin",
+      "email": "admin@admin.com",
+      "phone": 123456,
+      "password": "$2a$10$pKSsRa/ereCCJ1pBLKdoyejKCh9ecJJlhqd5R57Pgm2HizobP6foa",
+      "id": 5
+    },
+    {
+      "email": "test@test.com",
+      "password": "$2a$10$YyrdYT9ZdfJ6FMfl9YVeDuuDjt5lcyqxM66ON44Xqep3HSOI73QR2",
+      "name": "test",
+      "phone": 123456789,
+      "id": 6
+    },
+    {
+      "email": "test@asa.sds",
+      "password": "$2a$10$5ZqQyilm08aDiMkaJuFy.uXa006UFe7qUaMYnWygGAGwagdliecHS",
+      "name": "Mahrous Saied",
+      "phone": 1212,
+      "id": 7
+    },
+    {
+      "email": "ahmed@ahmed.com",
+      "password": "$2a$10$xj.HQbqqtqcZgig1BIHN.OXgO.BpKb3sTvozx9AOQEO0yksfWhNSq",
+      "name": "Ahmed Ali",
+      "phone": 8273655,
+      "id": 8
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
