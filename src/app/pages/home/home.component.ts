@@ -31,9 +31,5 @@ export class HomeComponent implements OnInit {
       this.globals.showToast('Something went wrong!','',NotificationTypes.Error)
     })  
   }
-  logout = () => {
-    this.auth.logout()
-    this.globals.currentUser = null
-    this.router.navigate(['/login'])
-  }
+
 }

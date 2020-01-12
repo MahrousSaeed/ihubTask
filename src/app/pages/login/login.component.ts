@@ -19,7 +19,6 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
   submitForm = () => {
-    console.log('login');
     this.auth.login({email:this.email,password:this.password}).subscribe(res => {
       this.token = res
       console.log(res);
@@ -36,12 +35,8 @@ export class LoginComponent implements OnInit {
           token:currentUser[0].token
         }
         this.auth.loginUser(currentUser[0])
-        // window.location.reload()
-      })
-      this.router.navigate(['/home'])
-      // users from api 
-      // return curent user data 
-      // this.auth.loginUser()      
+        this.router.navigate(['/home'])
+      })   
     },(err) => {
       console.log(err);
       this.globals.showToast(err.error,'',NotificationTypes.Error)

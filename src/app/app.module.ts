@@ -20,6 +20,8 @@ import { from } from 'rxjs';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { NavbarComponent } from './pages/navbar/navbar.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
     RegisterComponent,
     HomeComponent,
     ProfileComponent,
+    NavbarComponent,
+    NotFoundComponent,
 
   ],
   imports: [
