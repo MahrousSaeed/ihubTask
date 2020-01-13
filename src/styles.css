@@ -41,3 +41,7 @@ body{
 .btn-primary {
     background-color:#1e67b7 !important
 }
+.valid-feedback,.invalid-feedback {
+    position: absolute;
+    bottom: -20px;
+}

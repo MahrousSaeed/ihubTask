@@ -2,18 +2,28 @@
 	<form class="wrapper" #form="ngForm" role="form" autocomplete="off" (ngSubmit)="submitForm()">
 		<img class="mb-4" src="../../../assets/images/logo.png" alt="" width="72" height="auto">
 		<h1 class="h3 mb-4 font-weight-normal">Please sign in</h1>
+		<div class="form-group position-relative">
+			<label for="inputEmail" class="sr-only">Email address</label>
+			<input type="email" [(ngModel)]="email" id="email" name="email" #emaill='ngModel'
+				class="form-control rounded-pill mb-4" placeholder="Email address"
+				[class.is-invalid]="emaill.invalid && (emaill.dirty || emaill.touched)"
+				[class.is-valid]="emaill.valid && (emaill.dirty || emaill.touched)"
+				pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
+			<div class="valid-feedback"> Looks good! </div>
+			<div class="invalid-feedback">This Field Is Required.</div>
+		</div>
+		<div class="form-group position-relative">
+			<label for="inputPassword" class="sr-only">Password</label>
+			<input type="password" [(ngModel)]="password" id="password" name="password" #passwordd='ngModel'
+				class="form-control rounded-pill" placeholder="Password"
+				[class.is-invalid]="passwordd.invalid && (passwordd.dirty || passwordd.touched)"
+				[class.is-valid]="passwordd.valid && (passwordd.dirty || passwordd.touched)" required>
+			<div class="valid-feedback"> Looks good! </div>
+			<div class="invalid-feedback">This Field Is Required.</div>
+		</div>
 
-		<label for="inputEmail" class="sr-only">Email address</label>
-		<input 
-			type="email" [(ngModel)]="email" id="email" name="email" #emaill='ngModel'
-			class="form-control rounded-pill mb-4" placeholder="Email address" 
-			required>
-		<label for="inputPassword" class="sr-only">Password</label>
-		<input type="password" [(ngModel)]="password" id="password"
-		name="password" class="form-control rounded-pill" placeholder="Password" required>	
-
-		<button class="btn mt-4 btn-lg btn-primary btn-block submit" [disabled]='form.invalid' type="submit">Sign in</button>
+		<button class="btn mt-4 btn-lg btn-primary btn-block submit" [disabled]='form.invalid' type="submit">Sign
+			in</button>
 		<span class="mt-5">Do not have an account ? <a routerLink="/register">Rigister Now</a></span>
 	</form>
 </div>
-
